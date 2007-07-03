@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="zope.minmax",
-    version="1.0.0-dev",
+    version="1.0b1",
     license="ZPL 2.1",
     author="Zope Project",
     author_email="zope3-dev@zope.org",
