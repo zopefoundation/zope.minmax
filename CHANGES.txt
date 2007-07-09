@@ -1,3 +1,7 @@
+1.0b2
+
+Removed _p_independent method from AbstractValue class.
+
 1.0.0
 
 Initial release.

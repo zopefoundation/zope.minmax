@@ -19,9 +19,6 @@ class AbstractValue(persistent.Persistent):
     def __nonzero__(self):
         return bool(self.value)
 
-    def _p_independent(self):
-        return True
-
     def _p_resolveConflict(self, old, commited, new):
         raise NotImplementedError()
 
