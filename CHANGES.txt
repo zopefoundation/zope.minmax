@@ -1,17 +1,17 @@
 Changes
 =======
 
-1.0
----
+1.0 (2007-09-28)
+----------------
 
 No further changes since 1.0b2
 
-1.0b2
------
+1.0b2 (2007-07-09)
+------------------
 
 Removed _p_independent method from AbstractValue class.
 
-1.0b1
------
+1.0b1 (2007-07-03)
+------------------
 
 Initial release.
