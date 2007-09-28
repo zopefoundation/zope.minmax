@@ -6,7 +6,7 @@ long_description = (open("src/zope/minmax/minmax.txt").read() +
 
 setup(
     name="zope.minmax",
-    version="1.0",
+    version="1.1dev",
     license="ZPL 2.1",
     author="Zope Project",
     author_email="zope3-dev@zope.org",
