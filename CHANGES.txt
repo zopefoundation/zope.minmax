@@ -1,22 +1,22 @@
 Changes
 =======
 
-1.1 (unreleased)
+1.1 (2007-10-02)
 ----------------
 
-...
+- Refactored package setup.
 
 1.0 (2007-09-28)
 ----------------
 
-No further changes since 1.0b2
+- No further changes since 1.0b2
 
 1.0b2 (2007-07-09)
 ------------------
 
-Removed _p_independent method from AbstractValue class.
+- Removed ``_p_independent`` method from ``AbstractValue`` class.
 
 1.0b1 (2007-07-03)
 ------------------
 
-Initial release.
+- Initial release.
