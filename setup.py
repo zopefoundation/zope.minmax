@@ -30,7 +30,7 @@ setup(name='zope.minmax',
           read('README.txt')
           + '\n\n' +
           'Detailed Documentation\n' +
-          '======================'
+          '----------------------'
           + '\n\n' +
           read('src', 'zope', 'minmax', 'minmax.txt')
           + '\n\n' +
