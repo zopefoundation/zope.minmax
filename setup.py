@@ -21,7 +21,7 @@ def read(*rnames):
     return text
 
 setup(name='zope.minmax',
-      version = '1.1.0',
+      version = '1.2.0dev',
       author='Zope Corporation and Contributors',
       author_email='zope3-dev@zope.org',
       description=("Homogeneous values favoring maximum or minimum for ZODB "
