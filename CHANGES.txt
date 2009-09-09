@@ -5,22 +5,33 @@ CHANGES
 1.2.0 (unreleased)
 ------------------
 
+- Nothing yet.
+
+
+1.1.1 (2009-09-09)
+------------------
+
 - Fixed homepage link and mailing list address.
+- Cleaned up.
+
 
 1.1 (2007-10-02)
 ----------------
 
 - Refactored package setup.
 
+
 1.0 (2007-09-28)
 ----------------
 
 - No further changes since 1.0b2
 
+
 1.0b2 (2007-07-09)
 ------------------
 
 - Removed ``_p_independent`` method from ``AbstractValue`` class.
+
 
 1.0b1 (2007-07-03)
 ------------------
