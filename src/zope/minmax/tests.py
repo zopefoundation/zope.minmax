@@ -1,5 +1,5 @@
+import doctest
 import unittest
-import zope.testing
 
 def test_suite():
     return unittest.TestSuite((
