@@ -63,7 +63,7 @@ setup(
     package_dir={'': 'src'},
     namespace_packages=['zope',],
     extras_require=dict(
-        test=['zope.testing']
+        test=[],    # removed zope.testing; leaving for backward compatibility
         ),
     install_requires=[
         'setuptools',
