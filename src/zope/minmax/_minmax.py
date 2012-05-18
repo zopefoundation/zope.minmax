@@ -3,9 +3,8 @@ import zope.interface
 
 from zope.minmax import interfaces
 
+@zope.interface.implementer(interfaces.IAbstractValue)
 class AbstractValue(persistent.Persistent):
-
-    zope.interface.implements(interfaces.IAbstractValue)
 
     def __init__(self, value=None):
         self.value = value
