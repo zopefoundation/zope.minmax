@@ -15,8 +15,11 @@ class AbstractValue(persistent.Persistent):
     def __setstate__(self, value):
         self.value = value
 
-    def __nonzero__(self):
+    def __bool__(self):
         return bool(self.value)
+
+    # Py3: __nonzero__ is the old Python 2 name.
+    __nonzero__ = __bool__
 
     def _p_resolveConflict(self, old, commited, new):
         raise NotImplementedError()

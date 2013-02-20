@@ -27,13 +27,13 @@ We can confirm that the initial value is zero.
 
     >>> bool(max_favored)
     False
-    >>> print max_favored.value
+    >>> print(max_favored.value)
     None
 
 Now, we can store a new value in the object.
 
     >>> max_favored.value = 11
-    >>> print max_favored.value
+    >>> print(max_favored.value)
     11
     >>> bool(max_favored)
     True
@@ -43,7 +43,7 @@ Or we can use the methods.
     >>> max_favored.__setstate__(4532)
     >>> max_favored.__getstate__()
     4532
-    >>> print max_favored.value
+    >>> print(max_favored.value)
     4532
     >>> bool(max_favored)
     True
@@ -67,13 +67,13 @@ We need a confirmation that the initial value is zero.
 
     >>> bool(min_favored)
     False
-    >>> print min_favored.value
+    >>> print(min_favored.value)
     None
 
 Let's populate this one too.
 
     >>> min_favored.value = 22
-    >>> print min_favored.value
+    >>> print(min_favored.value)
     22
     >>> bool(min_favored)
     True
@@ -83,7 +83,7 @@ Or we can use the methods, again.
     >>> min_favored.__setstate__(8796)
     >>> min_favored.__getstate__()
     8796
-    >>> print min_favored.value
+    >>> print(min_favored.value)
     8796
     >>> bool(min_favored)
     True
@@ -138,7 +138,7 @@ new, it is still disregarded.
 How about an example that is not numerical?
 
     >>> max_word = zope.minmax.Maximum('joy')
-    >>> print max_word.value
+    >>> print(max_word.value)
     joy
     >>> bool(max_word)
     True
@@ -147,7 +147,7 @@ How about an example that is not numerical?
     >>> max_word._p_resolveConflict(max_word.value, 'exuberance', 'happiness')
     'happiness'
     >>> min_word = zope.minmax.Minimum(max_word.value)
-    >>> print min_word.value
+    >>> print(min_word.value)
     joy
     >>> bool(min_word)
     True

@@ -5,6 +5,8 @@ CHANGES
 2.0.0 (unreleased)
 ------------------
 
+- Added Python 3.3 and PyPy 1.9 support.
+
 - Replaced deprecated ``zope.interface.implements`` usage with equivalent
   ``zope.interface.implementer`` decorator.
 

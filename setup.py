@@ -58,6 +58,10 @@ setup(
         'Programming Language :: Python :: 2',
         'Programming Language :: Python :: 2.6',
         'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.3',
+        'Programming Language :: Python :: Implementation :: CPython',
+        'Programming Language :: Python :: Implementation :: PyPy',
         'Topic :: Internet :: WWW/HTTP',
         'Topic :: Software Development :: Libraries :: Python Modules',
         ],
@@ -69,10 +73,11 @@ setup(
         test=[],    # removed zope.testing; leaving for backward compatibility
         ),
     install_requires=[
+        'persistent',
         'setuptools',
-        'ZODB3',
         'zope.interface',
         ],
+    test_suite = 'zope.minmax.tests.test_suite',
     include_package_data=True,
     zip_safe=False,
     )
