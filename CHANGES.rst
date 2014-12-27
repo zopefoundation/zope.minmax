@@ -4,6 +4,8 @@ Changes
 2.1.0 (unreleased)
 ------------------
 
+- Add support for PyPy3.
+
 - Add support Python 3.4.
 
 
