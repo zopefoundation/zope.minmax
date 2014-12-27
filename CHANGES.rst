@@ -1,21 +1,21 @@
 Changes
 =======
 
-2.0.1 (unreleased)
+2.1.0 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add support Python 3.4.
 
 
 2.0.0 (2013-02-19)
 ------------------
 
-- Added Python 3.3 and PyPy 1.9 support.
+- Add support for Python 3.3 and PyPy.
 
-- Replaced deprecated ``zope.interface.implements`` usage with equivalent
+- Replace deprecated ``zope.interface.implements`` usage with equivalent
   ``zope.interface.implementer`` decorator.
 
-- Dropped support for Python 2.4 and 2.5.
+- Drop support for Python 2.4 and 2.5.
 
 
 1.1.2 (2009-09-24)
@@ -28,14 +28,13 @@ Changes
 1.1.1 (2009-09-09)
 ------------------
 
-- Fixed homepage link and mailing list address.
-- Cleaned up.
+- Fix homepage link and mailing list address.
 
 
 1.1 (2007-10-02)
 ----------------
 
-- Refactored package setup.
+- Refactor package setup.
 
 
 1.0 (2007-09-28)
@@ -47,7 +46,7 @@ Changes
 1.0b2 (2007-07-09)
 ------------------
 
-- Removed ``_p_independent`` method from ``AbstractValue`` class.
+- Remove ``_p_independent`` method from ``AbstractValue`` class.
 
 
 1.0b1 (2007-07-03)

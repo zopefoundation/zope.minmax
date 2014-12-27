@@ -27,7 +27,7 @@ def read(*rnames):
 
 setup(
     name='zope.minmax',
-    version='2.0.1.dev0',
+    version='2.1.0.dev0',
     author='Zope Foundation and Contributors',
     author_email='zope-dev@zope.org',
     description=(
@@ -60,6 +60,7 @@ setup(
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.3',
+        'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: Implementation :: CPython',
         'Programming Language :: Python :: Implementation :: PyPy',
         'Topic :: Internet :: WWW/HTTP',
