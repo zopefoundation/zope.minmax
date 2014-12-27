@@ -1,7 +1,7 @@
 Changes
 =======
 
-2.1.0 (unreleased)
+2.1.0 (2014-12-27)
 ------------------
 
 - Add support for PyPy3.
