@@ -1,6 +1,5 @@
-=================================
-Min/Max Value Conflict Resolution
-=================================
+``zope.minmax``
+===============
 
 This package provides support for homogeneous values favoring maximum
 or minimum for ZODB conflict resolution.  See

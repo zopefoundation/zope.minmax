@@ -22,8 +22,8 @@ import os
 from setuptools import setup, find_packages
 
 def read(*rnames):
-    text = open(os.path.join(os.path.dirname(__file__), *rnames)).read()
-    return text
+    with open(os.path.join(os.path.dirname(__file__), *rnames)) as f:
+        return f.read()
 
 setup(
     name='zope.minmax',
@@ -35,14 +35,14 @@ setup(
         "conflict resolution"
         ),
     long_description=(
-        read('README.txt')
+        read('README.rst')
         + '\n\n' +
         'Detailed Documentation\n' +
         '----------------------'
         + '\n\n' +
         read('src', 'zope', 'minmax', 'minmax.txt')
         + '\n\n' +
-        read('CHANGES.txt')
+        read('CHANGES.rst')
         ),
     license='ZPL 2.1',
     keywords=('zope3 zope zodb minimum maximum conflict resolution'),
