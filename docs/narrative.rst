@@ -1,7 +1,7 @@
 Conflict Resolution using Maximum or Minimum Values
 ===================================================
 
-The `zope.minmax.AbstractValue` class provides a super class which can
+The :class:`zope.minmax.AbstractValue` class provides a super class which can
 be subclassed to store arbitrary *homogeneous* values in a persistent
 storage and apply different conflict resolution policies.
 
@@ -11,9 +11,11 @@ either the maximum or the minimum of the conflicting values.
 Maximum
 -------
 
-The `zope.minmax.Maximum` class always resolves conflicts favoring the
+The :class:`zope.minmax.Maximum` class always resolves conflicts favoring the
 maximum value.  Let's instantiate one object and verify that it
 satisfies the interface.
+
+.. doctest::
 
     >>> import zope.minmax
     >>> import zope.interface.verify
@@ -24,12 +26,16 @@ satisfies the interface.
 
 We can confirm that the initial value is zero.
 
+.. doctest::
+
     >>> bool(max_favored)
     False
     >>> print(max_favored.value)
     None
 
 Now, we can store a new value in the object.
+
+.. doctest::
 
     >>> max_favored.value = 11
     >>> print(max_favored.value)
@@ -38,6 +44,8 @@ Now, we can store a new value in the object.
     True
 
 Or we can use the methods.
+
+.. doctest::
 
     >>> max_favored.__setstate__(4532)
     >>> max_favored.__getstate__()
@@ -53,9 +61,11 @@ more natural use.
 Minimum
 -------
 
-The `zope.minmax.Minimum` class always resolves conflicts favoring the
+The :class:`zope.minmax.Minimum` class always resolves conflicts favoring the
 minimum value.  Again, we instantiate an object and verify that it
 satisfies the interface.
+
+.. doctest::
 
     >>> min_favored = zope.minmax.Minimum()
     >>> zope.interface.verify.verifyObject(
@@ -64,12 +74,16 @@ satisfies the interface.
 
 We need a confirmation that the initial value is zero.
 
+.. doctest::
+
     >>> bool(min_favored)
     False
     >>> print(min_favored.value)
     None
 
 Let's populate this one too.
+
+.. doctest::
 
     >>> min_favored.value = 22
     >>> print(min_favored.value)
@@ -78,6 +92,8 @@ Let's populate this one too.
     True
 
 Or we can use the methods, again.
+
+.. doctest::
 
     >>> min_favored.__setstate__(8796)
     >>> min_favored.__getstate__()
@@ -94,9 +110,11 @@ Conflict Resolution
 -------------------
 
 Now, we need to exercise the conflict resolution interface.
-First for the `zope.minmax.Maximum`:
+First for the :class:`zope.minmax.Maximum`:
 
 Let's try differing values larger than the old value.
+
+.. doctest::
 
     >>> max_favored._p_resolveConflict(max_favored.value, 4536, 4535)
     4536
@@ -105,18 +123,24 @@ Let's try differing values larger than the old value.
 
 What happens when all the values are equal, including the old.
 
+.. doctest::
+
     >>> max_favored._p_resolveConflict(max_favored.value, 4532, 4532)
     4532
 
 Notice that when the old value is larger than both the committed and
 new, it is still disregarded.
 
+.. doctest::
+
     >>> max_favored._p_resolveConflict(max_favored.value, 4531, 4530)
     4531
 
-Now, the `zope.minmax.Minimum`:
+Now, the :class:`zope.minmax.Minimum`:
 
 Let's try differing values smaller than the old value.
+
+.. doctest::
 
     >>> min_favored._p_resolveConflict(min_favored.value, 8792, 8791)
     8791
@@ -125,16 +149,22 @@ Let's try differing values smaller than the old value.
 
 What happens when all the values are equal, including the old.
 
+.. doctest::
+
     >>> min_favored._p_resolveConflict(min_favored.value, 8796, 8796)
     8796
 
 Notice that when the old value is smaller than both the committed and
 new, it is still disregarded.
 
+.. doctest::
+
     >>> min_favored._p_resolveConflict(min_favored.value, 8798, 8799)
     8798
 
 How about an example that is not numerical?
+
+.. doctest::
 
     >>> max_word = zope.minmax.Maximum('joy')
     >>> print(max_word.value)

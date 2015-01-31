@@ -37,11 +37,6 @@ setup(
     long_description=(
         read('README.rst')
         + '\n\n' +
-        'Detailed Documentation\n' +
-        '----------------------'
-        + '\n\n' +
-        read('src', 'zope', 'minmax', 'minmax.txt')
-        + '\n\n' +
         read('CHANGES.rst')
         ),
     license='ZPL 2.1',
