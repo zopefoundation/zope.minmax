@@ -1,13 +1,13 @@
-import persistent.interfaces
-import zope.interface
+from persistent.interfaces import IPersistent
+from zope.interface import Attribute
 
-class IAbstractValue(persistent.interfaces.IPersistent):
+class IAbstractValue(IPersistent):
     """A persistent value with the conflict resolution.
 
     The values are expected to be homogeneous.
     """
 
-    value = zope.interface.Attribute('The initial value')
+    value = Attribute('The initial value')
 
     def __nonzero__():
         """Return Boolean cast of the value as True or False."""
