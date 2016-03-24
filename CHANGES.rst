@@ -1,10 +1,12 @@
 Changes
 =======
 
-2.1.1 (unreleased)
+2.2.0 (unreleased)
 ------------------
 
-- 100% unit test coverage (including branches).
+- Drop support for Python 2.6.
+
+- Bring unit test coverage to 100% (including branches).
 
 - Convert doctests to Sphinx documentation, including building docs
   and running doctest snippets under ``tox``.
