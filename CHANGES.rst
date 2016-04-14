@@ -4,6 +4,8 @@ Changes
 2.2.0 (unreleased)
 ------------------
 
+- Add support for Python 3.5.
+
 - Drop support for Python 2.6.
 
 - Bring unit test coverage to 100% (including branches).
