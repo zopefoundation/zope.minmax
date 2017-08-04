@@ -1,4 +1,11 @@
+[run]
+source = zope.minmax
+
 [report]
+precision = 2
 exclude_lines =
-    # pragma: no cover
-    class I[A-Z]\w+\((Interface|I[A-Z].*)\):
+    pragma: no cover
+    if __name__ == '__main__':
+    raise NotImplementedError
+    self.fail
+    raise AssertionError

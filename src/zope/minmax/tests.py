@@ -2,6 +2,12 @@ import unittest
 
 class ConformsToIAbstractValue(object):
 
+    def _getTargetClass(self):
+        raise NotImplementedError()
+
+    def _makeOne(self, *args, **kw):
+        raise NotImplementedError()
+
     def test_class_conforms_to_IAbstractValue(self):
         from zope.interface.verify import verifyClass
         from zope.minmax.interfaces import IAbstractValue
@@ -100,6 +106,4 @@ class MinimumTests(unittest.TestCase, ConformsToIAbstractValue):
 
 
 def test_suite():
-    return unittest.TestSuite((
-        unittest.makeSuite(AbstractValueTests),
-    ))
+    return unittest.defaultTestLoader.loadTestsFromName(__name__)

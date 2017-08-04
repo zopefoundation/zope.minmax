@@ -1,18 +1,26 @@
-``zope.minmax``
-===============
+=================
+ ``zope.minmax``
+=================
 
 .. image:: https://img.shields.io/pypi/v/zope.minmax.svg
-    :target: https://pypi.python.org/pypi/zope.minmax/
-    :alt: Latest Version
+        :target: https://pypi.python.org/pypi/zope.minmax/
+        :alt: Latest release
+
+.. image:: https://img.shields.io/pypi/pyversions/zope.minmax.svg
+        :target: https://pypi.org/project/zope.minmax/
+        :alt: Supported Python versions
 
 .. image:: https://travis-ci.org/zopefoundation/zope.minmax.png?branch=master
         :target: https://travis-ci.org/zopefoundation/zope.minmax
 
+.. image:: https://coveralls.io/repos/github/zopefoundation/zope.minmax/badge.svg?branch=master
+        :target: https://coveralls.io/github/zopefoundation/zope.minmax?branch=master
+
 .. image:: https://readthedocs.org/projects/zopeminmax/badge/?version=latest
-        :target: http://zopeminmax.readthedocs.io/en/latest/
+        :target: https://zopeminmax.readthedocs.io/en/latest/
         :alt: Documentation Status
 
 This package provides support for homogeneous values favoring maximum
-or minimum for ZODB conflict resolution.
+or minimum (e.g., numbers) for ZODB conflict resolution.
 
-See http://zopeminmax.readthedocs.io for a detailed description.
+See https://zopeminmax.readthedocs.io for a detailed description.
