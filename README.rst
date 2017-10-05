@@ -10,7 +10,7 @@
         :target: https://pypi.org/project/zope.minmax/
         :alt: Supported Python versions
 
-.. image:: https://travis-ci.org/zopefoundation/zope.minmax.png?branch=master
+.. image:: https://travis-ci.org/zopefoundation/zope.minmax.svg?branch=master
         :target: https://travis-ci.org/zopefoundation/zope.minmax
 
 .. image:: https://coveralls.io/repos/github/zopefoundation/zope.minmax/badge.svg?branch=master
