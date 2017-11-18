@@ -1,5 +1,6 @@
-:mod:`zope.minmax`
-==================
+=================
+ ``zope.minmax``
+=================
 
 Contents:
 
@@ -7,15 +8,14 @@ Contents:
    :maxdepth: 2
 
    narrative
-   api
    hacking
 
 
 
-Indices and tables
-==================
+====================
+ Indices and tables
+====================
 
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
-

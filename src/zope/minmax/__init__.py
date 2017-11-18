@@ -1,1 +1,1 @@
-from zope.minmax._minmax import Maximum, Minimum
+from zope.minmax._minmax import Maximum, Minimum, AbstractValue

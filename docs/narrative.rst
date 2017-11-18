@@ -1,15 +1,23 @@
-Conflict Resolution using Maximum or Minimum Values
-===================================================
+=====================================================
+ Conflict Resolution using Maximum or Minimum Values
+=====================================================
 
 The :class:`zope.minmax.AbstractValue` class provides a super class which can
 be subclassed to store arbitrary *homogeneous* values in a persistent
 storage and apply different conflict resolution policies.
 
+.. autoclass:: zope.minmax.interfaces.IAbstractValue
+.. autoclass:: zope.minmax.AbstractValue
+   :private-members:
+
 The subclasses defined here are resolving the conflicts using always
 either the maximum or the minimum of the conflicting values.
 
 Maximum
--------
+=======
+
+.. autoclass:: zope.minmax.Maximum
+
 
 The :class:`zope.minmax.Maximum` class always resolves conflicts favoring the
 maximum value.  Let's instantiate one object and verify that it
@@ -59,7 +67,9 @@ Do notice that using a direct assignment to the value attribute is a
 more natural use.
 
 Minimum
--------
+=======
+
+.. autoclass:: zope.minmax.Minimum
 
 The :class:`zope.minmax.Minimum` class always resolves conflicts favoring the
 minimum value.  Again, we instantiate an object and verify that it
@@ -107,7 +117,7 @@ Please, notice, again, that using a direct assignment to the value
 attribute is a more natural use.
 
 Conflict Resolution
--------------------
+===================
 
 Now, we need to exercise the conflict resolution interface.
 First for the :class:`zope.minmax.Maximum`:

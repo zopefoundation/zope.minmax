@@ -5,7 +5,8 @@
 2.2.1 (unreleased)
 ==================
 
-- Nothing changed yet.
+- Make the ``AbstractValue`` class public in ``zope.minmax``. It was
+  already documented to be public.
 
 
 2.2.0 (2017-08-14)
