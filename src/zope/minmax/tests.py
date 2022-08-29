@@ -1,5 +1,6 @@
 import unittest
 
+
 class ConformsToIAbstractValue(object):
 
     def _getTargetClass(self):
@@ -10,11 +11,13 @@ class ConformsToIAbstractValue(object):
 
     def test_class_conforms_to_IAbstractValue(self):
         from zope.interface.verify import verifyClass
+
         from zope.minmax.interfaces import IAbstractValue
         verifyClass(IAbstractValue, self._getTargetClass())
 
     def test_instance_conforms_to_IAbstractValue(self):
         from zope.interface.verify import verifyObject
+
         from zope.minmax.interfaces import IAbstractValue
         verifyObject(IAbstractValue, self._makeOne())
 
