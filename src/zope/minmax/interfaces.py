@@ -1,6 +1,7 @@
 from persistent.interfaces import IPersistent
 from zope.interface import Attribute
 
+
 class IAbstractValue(IPersistent):
     """A persistent value with the conflict resolution.
 
