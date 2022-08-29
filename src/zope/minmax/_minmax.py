@@ -35,10 +35,12 @@ class AbstractValue(persistent.Persistent):
         """
         raise NotImplementedError()
 
+
 class Maximum(AbstractValue):
     def _p_resolveConflict(self, old, commited, new):
         # including old does not seem logical but it's open to discussion
         return max(commited, new)
+
 
 class Minimum(AbstractValue):
     def _p_resolveConflict(self, old, commited, new):
