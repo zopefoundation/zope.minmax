@@ -5,6 +5,10 @@
 2.2.1 (unreleased)
 ==================
 
+- Drop support for Python 3.4.
+
+- Add support for Python 3.7, 3.8, 3.9, 3.10.
+
 - Make the ``AbstractValue`` class public in ``zope.minmax``. It was
   already documented to be public.
 
