@@ -24,9 +24,6 @@ class AbstractValue(persistent.Persistent):
     def __bool__(self):
         return bool(self.value)
 
-    # Py3: __nonzero__ is the old Python 2 name.
-    __nonzero__ = __bool__
-
     def _p_resolveConflict(self, old, commited, new):
         """
         Subclasses must implement this method.
