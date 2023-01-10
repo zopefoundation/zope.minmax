@@ -31,7 +31,7 @@ def read(*rnames):
 
 setup(
     name='zope.minmax',
-    version='2.4.dev0',
+    version='3.0.dev0',
     author='Zope Foundation and Contributors',
     author_email='zope-dev@zope.org',
     description=(
