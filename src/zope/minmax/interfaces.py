@@ -10,5 +10,5 @@ class IAbstractValue(IPersistent):
 
     value = Attribute('The initial value')
 
-    def __nonzero__():
+    def __bool__():
         """Return Boolean cast of the value as True or False."""

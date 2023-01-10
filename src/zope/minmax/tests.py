@@ -1,7 +1,7 @@
 import unittest
 
 
-class ConformsToIAbstractValue(object):
+class ConformsToIAbstractValue:
 
     def _getTargetClass(self):
         raise NotImplementedError()
