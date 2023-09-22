@@ -68,7 +68,8 @@ setup(
     url='https://zopeminmax.readthedocs.io',
     packages=find_packages('src'),
     package_dir={'': 'src'},
-    namespace_packages=['zope', ],
+    namespace_packages=['zope'],
+    python_requires='>=3.7',
     extras_require={
         'test': [
             'zope.testrunner',
