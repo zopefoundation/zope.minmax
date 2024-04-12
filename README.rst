@@ -1,6 +1,6 @@
-=================
- ``zope.minmax``
-=================
+===========
+zope.minmax
+===========
 
 .. image:: https://img.shields.io/pypi/v/zope.minmax.svg
         :target: https://pypi.python.org/pypi/zope.minmax/
