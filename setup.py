@@ -84,7 +84,6 @@ setup(
         'setuptools',
         'zope.interface',
     ],
-    test_suite='zope.minmax.tests.test_suite',
     include_package_data=True,
     zip_safe=False,
 )
