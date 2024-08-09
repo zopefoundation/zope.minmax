@@ -5,6 +5,10 @@
 3.0 (unreleased)
 ================
 
+- Add support for Python 3.12.
+
+- Drop support for Python 3.7.
+
 - Add support for Python 3.11.
 
 - Drop support for Python 2.7, 3.5, 3.6.
