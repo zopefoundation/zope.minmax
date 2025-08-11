@@ -33,23 +33,23 @@ class AbstractValueTests(unittest.TestCase, ConformsToIAbstractValue):
 
     def test_ctor_defaults(self):
         av = self._makeOne()
-        self.assertTrue(av.value is None)
+        self.assertIsNone(av.value)
 
     def test_ctor_explicit(self):
         value = object()
         av = self._makeOne(value)
-        self.assertTrue(av.value is value)
+        self.assertIs(av.value, value)
 
     def test___getstate__(self):
         value = object()
         av = self._makeOne(value)
-        self.assertTrue(av.__getstate__() is value)
+        self.assertIs(av.__getstate__(), value)
 
     def test___setstate__(self):
         value = object()
         av = self._makeOne()
         av.__setstate__(value)
-        self.assertTrue(av.value is value)
+        self.assertIs(av.value, value)
 
     def test___bool__w_falseish_value(self):
         av = self._makeOne()
