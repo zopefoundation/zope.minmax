@@ -20,7 +20,6 @@
 """
 import os
 
-from setuptools import find_packages
 from setuptools import setup
 
 
@@ -31,7 +30,7 @@ def read(*rnames):
 
 setup(
     name='zope.minmax',
-    version='3.1.dev0',
+    version='4.0.dev0',
     author='Zope Foundation and Contributors',
     author_email='zope-dev@zope.dev',
     description=(
@@ -66,13 +65,10 @@ setup(
         'Topic :: Software Development :: Libraries :: Python Modules',
     ],
     url='https://zopeminmax.readthedocs.io',
-    packages=find_packages('src'),
-    package_dir={'': 'src'},
-    namespace_packages=['zope'],
     python_requires='>=3.9',
     extras_require={
         'test': [
-            'zope.testrunner',
+            'zope.testrunner >= 6.4',
         ],
         'docs': [
             'Sphinx',
