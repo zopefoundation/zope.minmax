@@ -190,7 +190,7 @@ configured commands.
 :mod:`zope.minmax` configures the following :mod:`tox` environments via
 its ``tox.ini`` file:
 
-- The ``py26``, ``py27``, ``py33``, ``py34``, ``pypy`, and ``pypy3``
+- The ``py26``, ``py27``, ``py33``, ``py34``, ``pypy``, and ``pypy3``
   environments build a ``virtualenv`` with the appropriate interpreter,
   installs :mod:`zope.minmax` and dependencies, and runs the tests
   via ``python setup.py test -q``.
