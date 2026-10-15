@@ -97,11 +97,11 @@ you can see how well the tests cover the code:
    ..................
    Name                        Stmts   Miss Branch BrPart  Cover   Missing
    -----------------------------------------------------------------------
-   zope/minmax.py                  1      0      0      0   100%   
-   zope/minmax/_minmax.py         22      0      2      0   100%   
-   zope/minmax/interfaces.py       2      0      0      0   100%   
+   zope/minmax.py                  1      0      0      0   100%
+   zope/minmax/_minmax.py         22      0      2      0   100%
+   zope/minmax/interfaces.py       2      0      0      0   100%
    -----------------------------------------------------------------------
-   TOTAL                          25      0      2      0   100%   
+   TOTAL                          25      0      2      0   100%
    ----------------------------------------------------------------------
    Ran 18 tests in 0.027s
 
@@ -186,11 +186,11 @@ tool designed to run tests against multiple Python versions.  It creates
 a ``virtualenv`` for each configured version, installs the current package
 and configured dependencies into each ``virtualenv``, and then runs the
 configured commands.
-   
+
 :mod:`zope.minmax` configures the following :mod:`tox` environments via
 its ``tox.ini`` file:
 
-- The ``py26``, ``py27``, ``py33``, ``py34``, ``pypy`, and ``pypy3``
+- The ``py26``, ``py27``, ``py33``, ``py34``, ``pypy``, and ``pypy3``
   environments build a ``virtualenv`` with the appropriate interpreter,
   installs :mod:`zope.minmax` and dependencies, and runs the tests
   via ``python setup.py test -q``.
